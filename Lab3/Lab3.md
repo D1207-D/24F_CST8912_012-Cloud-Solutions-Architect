@@ -102,5 +102,5 @@ The concepts explored in this lab are crucial for organizations managing large-s
 ### Conclusion:
 
 This lab illustrated how Azure storage accounts can be configured and optimized for different use cases. From setting up proper redundancy to managing blob access tiers and lifecycle policies, you’ve learned how to implement cloud storage solutions that balance performance, availability, and cost. These skills are essential for any cloud solution architect aiming to create scalable, efficient cloud environments.
-Key Additions:
+
 
