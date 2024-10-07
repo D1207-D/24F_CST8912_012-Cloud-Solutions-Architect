@@ -30,18 +30,31 @@
    - **Workload environment**: Development  
    - **Compute + storage**: Leave unchanged  
    - **Backup storage redundancy**: Locally-redundant backup storage  
+![Step 1 Image](images/2.png)
 
 3. On the **Create SQL Database** page, select **Next: Networking >**, and on the Networking page, in the **Network connectivity** section, select **Public endpoint**. Then select **Yes** for both options in the **Firewall rules** section to allow access to your database server from Azure services and your current client IP address.
 
+![Step 1 Image](images/3.png)
+
 4. Select **Next: Security >** and set the **Enable Microsoft Defender for SQL** option to **Not now**.
+
+![Step 1 Image](images/4.png)
 
 5. Select **Next: Additional Settings >**, and on the **Additional settings** tab, set the **Use existing data** option to **Sample** (this will create a sample database that you can explore later).
 
+![Step 1 Image](images/5.png)
+
 6. Select **Review + Create**, and then select **Create** to create your Azure SQL database.
+
+![Step 1 Image](images/6.png)
 
 7. In the pane on the left side of the page, select **Query editor (preview)**, and then sign in using the administrator login and password you specified for your server.
 
+![Step 1 Image](images/7.png)
+
 8. Expand the **Tables** folder to see the tables in the database.
+
+![Step 1 Image](images/8.png)
 
 9. In the **query 1** pane, try executing the following queries, and select **run** to execute the query: **/2**
 
@@ -58,29 +71,54 @@
        ON p.ProductCategoryID = c.ProductCategoryID;
    ```
 
+![Step 1 Image](images/9.1.png)
+
+![Step 1 Image](images/9.2.png)
+
 10. **Create an Azure storage account** with the following settings, keeping the other advanced, networking, data protection, encryption settings default. **/2**
+
+![Step 1 Image](images/10.png)
 
 11. **Create a container** “`productdata8912`” in the storage account. **/1**
 
+![Step 1 Image](images/11.png)
+
 12. Create a new resource in your resource group from the Azure portal, search for **Azure Data Factory** with the following configuration, keeping Git configuration, networking, advanced settings as default. **/10**
+
+![Step 1 Image](images/12.png)
 
 13. Once created, launch **Azure Data Factory Studio**.
 
 14. On the homepage, choose the option to **ingest data**.
 
+![Step 1 Image](images/13.png)
+
 15. Choose task type, **built-in copy task**, and task cadence **“run once now”**.
 
+![Step 1 Image](images/14.png)
+
 16. In **source type**, choose **Azure SQL Database** from the dropdown, and in the connection, choose **new connection** with the following configuration and test the connection.
+![Step 1 Image](images/15.png)
 
 17. Select the **source table** as `SalesLT.Product` from the dropdown, click **next** and preview the data.
+
+![Step 1 Image](images/16.png)
+
+![Step 1 Image](images/17.png)
 
 18. Click **next**, choose **destination type**, select **“Azure Blob Storage”** from the dropdown.
 
 19. Create a **new connection** and test the connection to the storage account, choose the folder path and enter the file name.
 
+![Step 1 Image](images/18.png)
+
 20. Choose the configuration.
 
+![Step 1 Image](images/19.png)
+
 21. Review and finish this pipeline and check the storage account container to see the product CSV file copied from the database to the storage account.
+
+![Step 1 Image](images/20.png)
 
 22. After the demo, delete all the resources created during this lab and create a lab report documenting all the steps performed in the lab along with the screenshots.
 
