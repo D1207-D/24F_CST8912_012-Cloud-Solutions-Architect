@@ -104,9 +104,11 @@
 
 ![Step 1 Image](images/16.png)
 
-![Step 1 Image](images/17.png)
+
 
 18. Click **next**, choose **destination type**, select **“Azure Blob Storage”** from the dropdown.
+
+![Step 1 Image](images/17.png)
 
 19. Create a **new connection** and test the connection to the storage account, choose the folder path and enter the file name.
 
@@ -114,13 +116,15 @@
 
 20. Choose the configuration.
 
-![Step 1 Image](images/19.png)
+
 
 21. Review and finish this pipeline and check the storage account container to see the product CSV file copied from the database to the storage account.
 
-![Step 1 Image](images/20.png)
+![Step 1 Image](images/19.png)
 
 22. After the demo, delete all the resources created during this lab and create a lab report documenting all the steps performed in the lab along with the screenshots.
+
+![Step 1 Image](images/20.png)
 
 ---
 
