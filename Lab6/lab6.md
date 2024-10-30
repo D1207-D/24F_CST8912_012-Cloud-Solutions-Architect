@@ -48,6 +48,9 @@
 10. Select **Save**.
 11. Create and review when validation passes.
 
+![Screenshot of Virtual Network Creation](./images/1.png)
+
+
 ### Create a Storage Account
 
 1. In the search box, enter **Storage account** and select **Storage accounts** in the results.
@@ -65,6 +68,8 @@
 
 4. Select **Review** and **Create**.
 
+![Screenshot of Virtual Network Creation](./images/2.png)
+
 ### Disable Public Access to Storage Account
 
 1. Search for **Storage account** and select **Storage accounts**.
@@ -72,6 +77,8 @@
 3. Go to **Security + networking** > **Networking**.
 4. In the **Firewalls and virtual networks** tab, set **Public network access** to **Disabled**.
 5. Select **Save**.
+
+![Screenshot of Virtual Network Creation](./images/3.png)
 
 ### Create a Private Endpoint
 
@@ -107,6 +114,10 @@
 
 6. Complete **DNS**, **Tags**, and **Review + create**.
 
+![Screenshot of Virtual Network Creation](./images/4.png)
+
+![Screenshot of Virtual Network Creation](./images/5.png)
+
 ### Create a Test Virtual Machine
 
 1. Search for and select **Virtual machines** > **+ Create** > **Azure virtual machine**.
@@ -134,11 +145,19 @@
 
 4. Select **Review + create** and then **Create**.
 
+![Screenshot of Virtual Network Creation](./images/6.png)
+
+![Screenshot of Virtual Network Creation](./images/7.png)
+
 ### Storage Access Key and Blob Container
 
 1. In **Storage account**, go to **Access keys** in **Security + networking**.
 2. Copy the **Connection string** for **key1**.
 3. To add a blob container, go to **Data storage** > **Containers** and create a container.
+
+![Screenshot of Virtual Network Creation](./images/8.png)
+
+![Screenshot of Virtual Network Creation](./images/9.png)
 
 ### Test Connectivity to Private Endpoint
 
@@ -147,10 +166,19 @@
 3. Install **Microsoft Azure Storage Explorer** and connect using the connection string from the storage account.
 4. Verify the blob container is displayed in Storage Explorer.
 
+![Screenshot of Virtual Network Creation](./images/10.png)
+
+![Screenshot of Virtual Network Creation](./images/11.png)
+
+![Screenshot of Virtual Network Creation](./images/12.png)
+
+![Screenshot of Virtual Network Creation](./images/13.png)
 ### Clean-Up
 
 1. Disconnect from 8912-VM1.
 2. Clean all resources and document with screenshots.
+
+![Screenshot of Virtual Network Creation](./images/14.png)
 
 ---
 
