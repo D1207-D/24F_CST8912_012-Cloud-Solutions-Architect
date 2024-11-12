@@ -90,7 +90,10 @@ Lab 8_Week 11
 
 2. In **Policy > Assignments**, delete the **Require Cost Center tag with Default value** policy assignment.
 
+![Azure Tagging Example](./images/7.1.png "Azure Tagging Example")
+
 ![Azure Tagging Example](./images/7.png "Azure Tagging Example")
+
 
 
 3. **Assign policy** and specify:
@@ -109,6 +112,9 @@ Lab 8_Week 11
     |---------|-------|
     | Tag Name | Cost Center |
 
+![Azure Tagging Example](./images/8.png "Azure Tagging Example")
+
+
 5. **Remediation Settings**:
 
     | Setting               | Value               |
@@ -116,7 +122,13 @@ Lab 8_Week 11
     | Create a remediation task | enabled          |
     | Policy to remediate   | Inherit a tag from the resource group if missing |
 
+![Azure Tagging Example](./images/9.png "Azure Tagging Example")
+
+
 6. **Verification**: Create a new storage account in the resource group without adding the required tag. Confirm that the Cost Center tag with the value 000 is automatically assigned.
+
+![Azure Tagging Example](./images/11.png "Azure Tagging Example")
+
 
 ---
 
@@ -130,7 +142,12 @@ Lab 8_Week 11
     | Lock name | rg-lock |
     | Lock type | delete  |
 
+![Azure Tagging Example](./images/12.png "Azure Tagging Example")
+
+
 3. Attempt to delete the resource group. You should receive a notification denying the deletion due to the lock.
+
+![Azure Tagging Example](./images/13.png "Azure Tagging Example")
 
 ---
 
@@ -138,6 +155,13 @@ Lab 8_Week 11
 
 1. In **Policy > Assignments**, delete the policy assignment created in Task 3.
 2. In **Storage accounts**, select the resource group associated with the storage account, delete the **Infra** tag, and delete the storage account after confirming the name.
+
+![Azure Tagging Example](./images/14.png "Azure Tagging Example")
+
+![Azure Tagging Example](./images/15.png "Azure Tagging Example")
+
+![Azure Tagging Example](./images/16.png "Azure Tagging Example")
+
 
 ---
 
