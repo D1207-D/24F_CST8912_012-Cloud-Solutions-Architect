@@ -77,9 +77,9 @@ Lab 8_Week 11
 
 7. **Verification**: Attempt to create an Azure Storage account in the resource group without the required tag. You should receive a **Validation failed** message, indicating the policy is in effect.
 
-![Azure Tagging Example](./images/4.png "Azure Tagging Example")
+![Azure Tagging Example](./images/4.1.png "Azure Tagging Example")
 
-![Azure Tagging Example](./images/5.png "Azure Tagging Example")
+![Azure Tagging Example](./images/6.png "Azure Tagging Example")
 
 
 ---
@@ -89,6 +89,9 @@ Lab 8_Week 11
 1. Use the policy definition to remediate non-compliant resources by inheriting the Cost Center tag.
 
 2. In **Policy > Assignments**, delete the **Require Cost Center tag with Default value** policy assignment.
+
+![Azure Tagging Example](./images/7.png "Azure Tagging Example")
+
 
 3. **Assign policy** and specify:
 
