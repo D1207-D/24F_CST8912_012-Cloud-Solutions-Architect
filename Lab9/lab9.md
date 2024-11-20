@@ -22,6 +22,11 @@ Prof. Ragini Madan
 1. Configure Azure SQL database for the Canada Central region under your resource group `cst8912-demo`.  
    Choose **Single Database** under SQL Databases in SQL deployment options.  
 
+   ![Local Image](./images/1.png "SQL Database Example")
+   
+   ![Local Image](./images/2.png "SQL Database Example")
+
+
 2. Enter the following values in the Create Database page (keep other properties at their default settings):  
 
    - **Subscription**: Select your Azure subscription.  
@@ -41,33 +46,47 @@ Prof. Ragini Madan
    - **Want to use SQL Elastic Pool?**: No.  
    - **Workload environment**: Development.  
    - **Compute + Storage**: Leave unchanged.  
-   - **Backup storage redundancy**: Locally-redundant backup storage.  
+   - **Backup storage redundancy**: Locally-redundant backup storage.
+  
+   ![Local Image](./images/3.png "SQL Database Example")  
 
 3. On the Create SQL Database page:  
    - Select **Next: Networking >**.  
    - In the **Network Connectivity** section, select **Public Endpoint**.  
-   - Set **Yes** for both options under Firewall rules to allow access to your database server from Azure services and your current client IP address.  
+   - Set **Yes** for both options under Firewall rules to allow access to your database server from Azure services and your current client IP address.
+  
+   ![Local Image](./images/4.png "SQL Database Example") 
 
-4. Select **Next: Security >** and set **Enable Microsoft Defender for SQL** to **Not now**.  
+4. Select **Next: Security >** and set **Enable Microsoft Defender for SQL** to **Not now**.
+   
+   ![Local Image](./images/5.png "SQL Database Example")
 
 5. Select **Next: Additional Settings >** and set **Use Existing Data** to **Sample** (this will create a sample database to explore later).  
 
-6. Select **Review + Create**, and then click **Create** to create your Azure SQL database.  
+6. Select **Review + Create**, and then click **Create** to create your Azure SQL database.
+
+   ![Local Image](./images/6.png "SQL Database Example")
 
 ---
 
 ### Task 2: Configure Advanced Data Protection
 
-1. On the SQL server blade, in the **Security** section, click **Microsoft Defender for Cloud** and select **Enable Microsoft Defender for SQL**.  
+1. On the SQL server blade, in the **Security** section, click **Microsoft Defender for Cloud** and select **Enable Microsoft Defender for SQL**.
+   
+![Local Image](./images/7.png "SQL Database Example")
 
 2. On the SQL server blade, in the **Security** section, on the **Microsoft Defender for Cloud** page, configure the **Microsoft Defender for SQL** option at the subscription level.  
 
 3. On the Server Settings blade, review details about:  
    - Pricing and trial periods.  
    - **Vulnerability Assessment Settings**.  
-   - **Advanced Threat Protection Settings**.  
+   - **Advanced Threat Protection Settings**.
+  
+   ![Local Image](./images/8.png "SQL Database Example")
 
-4. Review **Recommendations** and **Security Alerts** on the Microsoft Defender for Cloud blade.  
+4. Review **Recommendations** and **Security Alerts** on the Microsoft Defender for Cloud blade.
+   
+![Local Image](./images/9.png "SQL Database Example")
 
 ---
 
@@ -76,12 +95,23 @@ Prof. Ragini Madan
 1. On the SQL server blade, in the **Settings** section, click **SQL Databases**.  
 2. On the SQL database blade, in the **Security** section, click **Data Discovery & Classification**.  
 3. On the **Data Discovery & Classification** blade, click the **Classification** tab.  
+
+  ![Local Image](./images/10.png "SQL Database Example") 
+
 4. Click the text message:  
    *We have found 15 columns with classification recommendations* (displayed on a blue bar at the top).  
+   
+   ![Local Image](./images/11.png "SQL Database Example")
+
 5. Review the listed columns and their recommended sensitivity labels.  
 6. Select all and click **Accept Selected Recommendations**.  
+
+   ![Local Image](./images/12.png "SQL Database Example")
+
 7. After completing your review, click **Save**.  
 8. On the **Overview** tab, verify that the classification information has been updated.  
+
+   ![Local Image](./images/13.png "SQL Database Example")
 
 ---
 
@@ -94,19 +124,36 @@ Prof. Ragini Madan
 5. Set **Retention (days)** to `5`.  
 6. Save the auditing settings.  
 
+   ![Local Image](./images/14.png "SQL Database Example")
+
 #### Database-level Auditing:  
 7. On the **SQL Database** blade, enable auditing.  
+
+![Local Image](./images/15.png "SQL Database Example")
+
 8. On the database **Overview** page, use the **Query Editor (Preview)**:  
    - Test failed login attempts (check firewall and password issues).  
+
+   ![Local Image](./images/16.png "SQL Database Example")
+
    - Test successful logins and execute queries.  
 
-9. Check **Audit Logs** under the **Auditing** section.  
+   ![Local Image](./images/17.png "SQL Database Example")
+
+9. Check **Audit Logs** under the **Auditing** section.
+    
+   ![Local Image](./images/18.png "SQL Database Example")
+
+   ![Local Image](./images/19.png "SQL Database Example")
 
 ---
 
 ### Task 5: Clean Up Resources  
 - Delete all the resources created during this lab.  
-- Document the steps with screenshots in the lab report.  
+
+![Local Image](./images/20.png "SQL Database Example")
+
+
 
 ---
 
